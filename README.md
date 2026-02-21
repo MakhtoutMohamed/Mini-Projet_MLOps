@@ -1,9 +1,9 @@
 # mlops-ml-project (baseline)
 
 Mini-projet **ML & Git** (baseline reproductible) :
-- lecture d’une config **YAML**
-- entraînement d’un modèle simple (Iris)
-- génération d’artefacts minimaux
+- lecture d'une config **YAML**
+- entraînement d'un modèle simple (Iris)
+- génération d'artefacts minimaux
 
 > Dataset par défaut : **Iris** (scikit-learn). Une extension CSV est prévue via `data.kind: csv`.
 
@@ -33,7 +33,7 @@ mlops-ml-project/
 
 ## Installation
 
-### Linux / macOS
+### Linux
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -93,8 +93,8 @@ git checkout -b dev
 git checkout -b feature/preprocessing
 ```
 
-Dans `feature/preprocessing`, tu peux enrichir le pipeline dans `src/features.py`
-(ex: clipping via `FunctionTransformer`), relancer `python scripts/train.py`, puis merge :
+Dans `feature/preprocessing`, j'ai enrichir le pipeline dans `src/features.py`
+(clipping via `FunctionTransformer`), et j'ai relancer `python scripts/train.py`, puis merge :
 
 ```bash
 git checkout dev
